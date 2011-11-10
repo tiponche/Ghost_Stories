@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 #import "GhostViewController.h"
+     
+
+// adasd
+
+
 
 @implementation AppDelegate
 
