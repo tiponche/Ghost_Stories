@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F2395F614628A34009F4D91 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F2395F214628A34009F4D91 /* CHANGELOG.md */; };
-		1F2395F714628A34009F4D91 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2395F414628A34009F4D91 /* JSONKit.m */; };
-		1F2395F814628A34009F4D91 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F2395F514628A34009F4D91 /* README.md */; };
 		1F5BCA7714627AEE001A32E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5BCA7614627AEE001A32E2 /* UIKit.framework */; };
 		1F5BCA7914627AEE001A32E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5BCA7814627AEE001A32E2 /* Foundation.framework */; };
 		1F5BCA7B14627AEE001A32E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5BCA7A14627AEE001A32E2 /* CoreGraphics.framework */; };
@@ -18,13 +15,10 @@
 		1F5BCA8714627AEE001A32E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BCA8614627AEE001A32E2 /* AppDelegate.m */; };
 		1F5BCA9714627E06001A32E2 /* GhostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BCA9614627E06001A32E2 /* GhostViewController.m */; };
 		1FA3FDAB146A3DB600F10048 /* URLCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA3FDAA146A3DB600F10048 /* URLCenter.m */; };
+		1FD01E68146BEC5200799F80 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD01E67146BEC5200799F80 /* JSONKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F2395F214628A34009F4D91 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
-		1F2395F314628A34009F4D91 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		1F2395F414628A34009F4D91 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		1F2395F514628A34009F4D91 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1F5BCA7214627AED001A32E2 /* GhostNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GhostNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5BCA7614627AEE001A32E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1F5BCA7814627AEE001A32E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,6 +33,8 @@
 		1F5BCA9614627E06001A32E2 /* GhostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GhostViewController.m; path = ViewController/GhostViewController.m; sourceTree = "<group>"; };
 		1FA3FDA9146A3DB600F10048 /* URLCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLCenter.h; sourceTree = "<group>"; };
 		1FA3FDAA146A3DB600F10048 /* URLCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLCenter.m; sourceTree = "<group>"; };
+		1FD01E66146BEC5200799F80 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = GhostNav/JSONKit.h; sourceTree = "<group>"; };
+		1FD01E67146BEC5200799F80 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = GhostNav/JSONKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,17 +51,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F2395F114628A34009F4D91 /* JSONKit */ = {
-			isa = PBXGroup;
-			children = (
-				1F2395F214628A34009F4D91 /* CHANGELOG.md */,
-				1F2395F314628A34009F4D91 /* JSONKit.h */,
-				1F2395F414628A34009F4D91 /* JSONKit.m */,
-				1F2395F514628A34009F4D91 /* README.md */,
-			);
-			path = JSONKit;
-			sourceTree = "<group>";
-		};
 		1F5BCA6714627AEC001A32E2 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +71,8 @@
 		1F5BCA7514627AED001A32E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1FD01E66146BEC5200799F80 /* JSONKit.h */,
+				1FD01E67146BEC5200799F80 /* JSONKit.m */,
 				1F5BCA7614627AEE001A32E2 /* UIKit.framework */,
 				1F5BCA7814627AEE001A32E2 /* Foundation.framework */,
 				1F5BCA7A14627AEE001A32E2 /* CoreGraphics.framework */,
@@ -121,7 +108,6 @@
 				1FA3FDA8146A3DB600F10048 /* URLCenter */,
 				1F5BCA9514627E06001A32E2 /* GhostViewController.h */,
 				1F5BCA9614627E06001A32E2 /* GhostViewController.m */,
-				1F2395F114628A34009F4D91 /* JSONKit */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -186,8 +172,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F5BCA8114627AEE001A32E2 /* InfoPlist.strings in Resources */,
-				1F2395F614628A34009F4D91 /* CHANGELOG.md in Resources */,
-				1F2395F814628A34009F4D91 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,8 +185,8 @@
 				1F5BCA8314627AEE001A32E2 /* main.m in Sources */,
 				1F5BCA8714627AEE001A32E2 /* AppDelegate.m in Sources */,
 				1F5BCA9714627E06001A32E2 /* GhostViewController.m in Sources */,
-				1F2395F714628A34009F4D91 /* JSONKit.m in Sources */,
 				1FA3FDAB146A3DB600F10048 /* URLCenter.m in Sources */,
+				1FD01E68146BEC5200799F80 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
