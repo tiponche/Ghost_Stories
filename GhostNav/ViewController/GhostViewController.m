@@ -152,13 +152,7 @@
             {   
                 cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Load"] autorelease];
             }
-//            if (cell == nil) 
-//            {
-//                cell = [[[ImageCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
-//            }
-            // Reset previous content of the cell, I have these defined in a UITableCell subclass, change them where needed
-//            cell.cellBackground.image = nil;
-//            cell.titleLabel.text = nil;
+
             
             // Here we create the ‘Load more’ cell
 //            UILabel *loadMore = [[UILabel alloc]initWithFrame: CGRectMake(0, 0, loadMore.frame.size.width, loadMore.frame.size.height)];
