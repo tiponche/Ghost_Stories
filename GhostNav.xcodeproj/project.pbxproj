@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F3A042D1488B84700652745 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3A042C1488B84700652745 /* AudioToolbox.framework */; };
+		1F3A04331488BA9C00652745 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3A04321488BA9C00652745 /* AVFoundation.framework */; };
+		1F3A043C1488C53500652745 /* a26.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F3A043B1488C53500652745 /* a26.mp3 */; };
+		1F3A043E1488CB8700652745 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3A043D1488CB8700652745 /* icon.png */; };
+		1F3A04401488CCF500652745 /* ghost.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1F3A043F1488CCF500652745 /* ghost.PNG */; };
 		1F5BCA7714627AEE001A32E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5BCA7614627AEE001A32E2 /* UIKit.framework */; };
 		1F5BCA7914627AEE001A32E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5BCA7814627AEE001A32E2 /* Foundation.framework */; };
 		1F5BCA7B14627AEE001A32E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5BCA7A14627AEE001A32E2 /* CoreGraphics.framework */; };
@@ -14,11 +19,26 @@
 		1F5BCA8314627AEE001A32E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BCA8214627AEE001A32E2 /* main.m */; };
 		1F5BCA8714627AEE001A32E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BCA8614627AEE001A32E2 /* AppDelegate.m */; };
 		1F5BCA9714627E06001A32E2 /* GhostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BCA9614627E06001A32E2 /* GhostViewController.m */; };
+		1F7241AA1490C20700AD0588 /* IOHostAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7241A91490C20700AD0588 /* IOHostAudio.m */; };
+		1F972E60148DDA1C0085848F /* chainSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F972E5F148DDA1C0085848F /* chainSound.mp3 */; };
+		1F972E63148DF4920085848F /* Churched.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F972E61148DF4910085848F /* Churched.mp3 */; };
+		1F972E64148DF4920085848F /* GhostTown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F972E62148DF4910085848F /* GhostTown.mp3 */; };
 		1FA3FDAB146A3DB600F10048 /* URLCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA3FDAA146A3DB600F10048 /* URLCenter.m */; };
-		1FD01E68146BEC5200799F80 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD01E67146BEC5200799F80 /* JSONKit.m */; };
+		1FA6418D147AA364002389AF /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6418C147AA364002389AF /* JSONKit.m */; };
+		1FA64194147AA3C8002389AF /* DetailViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA64192147AA3C8002389AF /* DetailViewController1.m */; };
+		1FA64197147AA3EF002389AF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA64196147AA3EF002389AF /* MBProgressHUD.m */; };
+		1FF0242D1488D44F00AC96BE /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0242C1488D44F00AC96BE /* SoundManager.m */; };
+		1FF0242F1488D9FB00AC96BE /* a42.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FF0242E1488D9FB00AC96BE /* a42.mp3 */; };
+		1FF024311488DAA300AC96BE /* a53.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FF024301488DAA300AC96BE /* a53.mp3 */; };
+		1FFFB1821484F27F006002F9 /* WebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFB1811484F27F006002F9 /* WebView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F3A042C1488B84700652745 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1F3A04321488BA9C00652745 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1F3A043B1488C53500652745 /* a26.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = a26.mp3; sourceTree = "<group>"; };
+		1F3A043D1488CB8700652745 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		1F3A043F1488CCF500652745 /* ghost.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghost.PNG; sourceTree = "<group>"; };
 		1F5BCA7214627AED001A32E2 /* GhostNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GhostNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5BCA7614627AEE001A32E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1F5BCA7814627AEE001A32E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -31,10 +51,25 @@
 		1F5BCA8614627AEE001A32E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1F5BCA9514627E06001A32E2 /* GhostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GhostViewController.h; path = ViewController/GhostViewController.h; sourceTree = "<group>"; };
 		1F5BCA9614627E06001A32E2 /* GhostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GhostViewController.m; path = ViewController/GhostViewController.m; sourceTree = "<group>"; };
+		1F7241A81490C20700AD0588 /* IOHostAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOHostAudio.h; path = ../IOHostAudio.h; sourceTree = "<group>"; };
+		1F7241A91490C20700AD0588 /* IOHostAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IOHostAudio.m; path = ../IOHostAudio.m; sourceTree = "<group>"; };
+		1F972E5F148DDA1C0085848F /* chainSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chainSound.mp3; sourceTree = "<group>"; };
+		1F972E61148DF4910085848F /* Churched.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Churched.mp3; sourceTree = "<group>"; };
+		1F972E62148DF4910085848F /* GhostTown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GhostTown.mp3; sourceTree = "<group>"; };
 		1FA3FDA9146A3DB600F10048 /* URLCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLCenter.h; sourceTree = "<group>"; };
 		1FA3FDAA146A3DB600F10048 /* URLCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLCenter.m; sourceTree = "<group>"; };
-		1FD01E66146BEC5200799F80 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = GhostNav/JSONKit.h; sourceTree = "<group>"; };
-		1FD01E67146BEC5200799F80 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = GhostNav/JSONKit.m; sourceTree = "<group>"; };
+		1FA6418B147AA364002389AF /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = GhostNav/JSONKit/JSONKit.h; sourceTree = "<group>"; };
+		1FA6418C147AA364002389AF /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = GhostNav/JSONKit/JSONKit.m; sourceTree = "<group>"; };
+		1FA64191147AA3C8002389AF /* DetailViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController1.h; path = GhostNav/DetailViewController/DetailViewController1.h; sourceTree = SOURCE_ROOT; };
+		1FA64192147AA3C8002389AF /* DetailViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController1.m; path = GhostNav/DetailViewController/DetailViewController1.m; sourceTree = SOURCE_ROOT; };
+		1FA64195147AA3EF002389AF /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
+		1FA64196147AA3EF002389AF /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
+		1FF0242B1488D44F00AC96BE /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
+		1FF0242C1488D44F00AC96BE /* SoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
+		1FF0242E1488D9FB00AC96BE /* a42.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = a42.mp3; sourceTree = "<group>"; };
+		1FF024301488DAA300AC96BE /* a53.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = a53.mp3; sourceTree = "<group>"; };
+		1FFFB1801484F27F006002F9 /* WebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebView.h; path = GhostNav/WebView/WebView.h; sourceTree = SOURCE_ROOT; };
+		1FFFB1811484F27F006002F9 /* WebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebView.m; path = GhostNav/WebView/WebView.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F3A04331488BA9C00652745 /* AVFoundation.framework in Frameworks */,
+				1F3A042D1488B84700652745 /* AudioToolbox.framework in Frameworks */,
 				1F5BCA7714627AEE001A32E2 /* UIKit.framework in Frameworks */,
 				1F5BCA7914627AEE001A32E2 /* Foundation.framework in Frameworks */,
 				1F5BCA7B14627AEE001A32E2 /* CoreGraphics.framework in Frameworks */,
@@ -71,8 +108,10 @@
 		1F5BCA7514627AED001A32E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1FD01E66146BEC5200799F80 /* JSONKit.h */,
-				1FD01E67146BEC5200799F80 /* JSONKit.m */,
+				1FA6418B147AA364002389AF /* JSONKit.h */,
+				1FA6418C147AA364002389AF /* JSONKit.m */,
+				1F3A04321488BA9C00652745 /* AVFoundation.framework */,
+				1F3A042C1488B84700652745 /* AudioToolbox.framework */,
 				1F5BCA7614627AEE001A32E2 /* UIKit.framework */,
 				1F5BCA7814627AEE001A32E2 /* Foundation.framework */,
 				1F5BCA7A14627AEE001A32E2 /* CoreGraphics.framework */,
@@ -85,7 +124,10 @@
 			children = (
 				1F5BCA8514627AEE001A32E2 /* AppDelegate.h */,
 				1F5BCA8614627AEE001A32E2 /* AppDelegate.m */,
+				1FA64186147AA245002389AF /* MBPregressHud */,
 				1F5BCA9914627E0D001A32E2 /* ViewController */,
+				1FD0C0A7146D2D7B003D538A /* DetailViewController */,
+				1FA3FDA8146A3DB600F10048 /* URLCenter */,
 				1F5BCA7D14627AEE001A32E2 /* Supporting Files */,
 			);
 			path = GhostNav;
@@ -94,6 +136,14 @@
 		1F5BCA7D14627AEE001A32E2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1F972E61148DF4910085848F /* Churched.mp3 */,
+				1F972E62148DF4910085848F /* GhostTown.mp3 */,
+				1F972E5F148DDA1C0085848F /* chainSound.mp3 */,
+				1FF024301488DAA300AC96BE /* a53.mp3 */,
+				1FF0242E1488D9FB00AC96BE /* a42.mp3 */,
+				1F3A043F1488CCF500652745 /* ghost.PNG */,
+				1F3A043D1488CB8700652745 /* icon.png */,
+				1F3A043B1488C53500652745 /* a26.mp3 */,
 				1F5BCA7E14627AEE001A32E2 /* GhostNav-Info.plist */,
 				1F5BCA7F14627AEE001A32E2 /* InfoPlist.strings */,
 				1F5BCA8214627AEE001A32E2 /* main.m */,
@@ -105,7 +155,10 @@
 		1F5BCA9914627E0D001A32E2 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1FA3FDA8146A3DB600F10048 /* URLCenter */,
+				1F7241A81490C20700AD0588 /* IOHostAudio.h */,
+				1F7241A91490C20700AD0588 /* IOHostAudio.m */,
+				1FF0242B1488D44F00AC96BE /* SoundManager.h */,
+				1FF0242C1488D44F00AC96BE /* SoundManager.m */,
 				1F5BCA9514627E06001A32E2 /* GhostViewController.h */,
 				1F5BCA9614627E06001A32E2 /* GhostViewController.m */,
 			);
@@ -119,6 +172,27 @@
 				1FA3FDAA146A3DB600F10048 /* URLCenter.m */,
 			);
 			path = URLCenter;
+			sourceTree = "<group>";
+		};
+		1FA64186147AA245002389AF /* MBPregressHud */ = {
+			isa = PBXGroup;
+			children = (
+				1FA64195147AA3EF002389AF /* MBProgressHUD.h */,
+				1FA64196147AA3EF002389AF /* MBProgressHUD.m */,
+			);
+			name = MBPregressHud;
+			sourceTree = "<group>";
+		};
+		1FD0C0A7146D2D7B003D538A /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1FA64191147AA3C8002389AF /* DetailViewController1.h */,
+				1FA64192147AA3C8002389AF /* DetailViewController1.m */,
+				1FFFB1801484F27F006002F9 /* WebView.h */,
+				1FFFB1811484F27F006002F9 /* WebView.m */,
+			);
+			name = DetailViewController;
+			path = URLCenter/DetailViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +246,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F5BCA8114627AEE001A32E2 /* InfoPlist.strings in Resources */,
+				1F3A043C1488C53500652745 /* a26.mp3 in Resources */,
+				1F3A043E1488CB8700652745 /* icon.png in Resources */,
+				1F3A04401488CCF500652745 /* ghost.PNG in Resources */,
+				1FF0242F1488D9FB00AC96BE /* a42.mp3 in Resources */,
+				1FF024311488DAA300AC96BE /* a53.mp3 in Resources */,
+				1F972E60148DDA1C0085848F /* chainSound.mp3 in Resources */,
+				1F972E63148DF4920085848F /* Churched.mp3 in Resources */,
+				1F972E64148DF4920085848F /* GhostTown.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +268,12 @@
 				1F5BCA8714627AEE001A32E2 /* AppDelegate.m in Sources */,
 				1F5BCA9714627E06001A32E2 /* GhostViewController.m in Sources */,
 				1FA3FDAB146A3DB600F10048 /* URLCenter.m in Sources */,
-				1FD01E68146BEC5200799F80 /* JSONKit.m in Sources */,
+				1FA6418D147AA364002389AF /* JSONKit.m in Sources */,
+				1FA64194147AA3C8002389AF /* DetailViewController1.m in Sources */,
+				1FA64197147AA3EF002389AF /* MBProgressHUD.m in Sources */,
+				1FFFB1821484F27F006002F9 /* WebView.m in Sources */,
+				1FF0242D1488D44F00AC96BE /* SoundManager.m in Sources */,
+				1F7241AA1490C20700AD0588 /* IOHostAudio.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

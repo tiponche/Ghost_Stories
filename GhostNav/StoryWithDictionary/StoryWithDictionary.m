@@ -11,26 +11,29 @@
 #import "URLCenter.h"
 
 @implementation StoryWithDictionary
-@synthesize receivedData, dataArray;
+@synthesize delegate;
 
-- (void)dealloc {
-    self.receivedData = nil;
-    self.dataArray = nil;
-    [super dealloc];
-}
-
--(StoryWithDictionary*)story:(id *)story 
+- (UIImage *)imageThumb: (int *)indexrow
 {
-    URLCenter *url = [[[URLCenter alloc] init] autorelease];
     
+    NSURLRequest *theRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:[URLCenter hostURL]] 
+                                                cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60];
+    NSURLResponse *response;
+	NSError *error = [[NSError alloc] init];
+    NSData *rawData = [NSURLConnection sendSynchronousRequest:theRequest returningResponse:&response error:&error];   
+    NSData *arrayFromData = [rawData objectFromJSONData];
     
-    self.dataArray = [[self.receivedData objectFromJSONData] autorelease];
+    NSDictionary *storyObjectDictionary = [arrayFromData objectFromJSONData];
+    NSLog(@"%@", storyObjectDictionary);
+    NSDictionary *story = [storyObjectDictionary objectForKey:@"story"];
     
-    for (NSDictionary *storyObject in self.dataArray) {
-        NSDictionary *story = [storyObject objectForKey:@"story"];
-        NSLog(@"%@", [story objectForKey:@"story_snippet"]);
-    }
-    return self;
+    NSString *imageURL = [NSURL URLWithString:[story objectForKey:@"image_thumb"]];
+    NSString *imagethumbString = [NSString stringWithFormat:@"%@%@", [URLCenter hostURL], imageURL];
+    NSURL *imageThumbURL = [NSURL URLWithString:imagethumbString];
+    NSData *imageData = [NSData dataWithContentsOfURL:imageThumbURL];
+    UIImage *imageThumb = [UIImage imageWithData:imageData];
+    
+    return imageThumb;
 }
 
 @end

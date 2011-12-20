@@ -7,16 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "URLCenter.h"
+@class StoryWithDictionary;
+
+@protocol StoryWithDictionaryDelegate <NSObject>
+
+- (UIImage *)imageThumb: (int *)indexrow;
+
+@end
 
 @interface StoryWithDictionary : NSObject
 {
-    NSMutableData *receivedData;
-    NSMutableArray *dataArray;
+    id <StoryWithDictionaryDelegate> delegate;
 }
 
-@property (nonatomic, retain) NSMutableData *receivedData;
-@property (nonatomic, retain) NSMutableArray *dataArray;
-
--(StoryWithDictionary*)story:(id *)story;
-
+@property (nonatomic, retain) id <StoryWithDictionaryDelegate> delegate;
 @end

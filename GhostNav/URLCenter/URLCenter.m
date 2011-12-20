@@ -8,13 +8,25 @@
 
 #import "URLCenter.h"
 #import "JSONKit.h"
-#define hostURLString @"http://ohho.in.th:16000/"
+#define hostURLString @"http://ohho.in.th:16000"
 
 @implementation URLCenter
+@synthesize delegate;
 
-+ (NSString *) hostURL
+- (void)dealloc {
+    self.delegate = nil;
+    [super dealloc];
+}
+
+- (id)init {
+    self = [super init];
+    if (self) {
+    }
+    return self;
+}
+
++ (NSString *)hostURL
 {
     return hostURLString;
 }
-
 @end

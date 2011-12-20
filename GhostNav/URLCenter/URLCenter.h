@@ -8,8 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-@interface URLCenter : NSObject
+@protocol URLCenterDelegate <NSObject>
 
-+ (NSString *) hostURL;
++ (NSString *)hostURL;
+
+@end
+
+@interface URLCenter : NSObject{
+    id<URLCenterDelegate> delegate;
+}
+
+@property (nonatomic, assign) id<URLCenterDelegate> delegate;
+
++ (NSString *)hostURL;
 
 @end

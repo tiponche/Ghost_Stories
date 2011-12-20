@@ -8,14 +8,48 @@
 
 #import <UIKit/UIKit.h>
 #import "URLCenter.h"
+#import "DetailViewController1.h"
+#import "MBProgressHUD.h"
+#import <AVFoundation/AVFoundation.h>
+#import "SoundManager.h"
+#import "IOHostAudio.h"
 
-@interface GhostViewController : UITableViewController
+@interface GhostViewController : UITableViewController <URLCenterDelegate, NSURLConnectionDataDelegate, MBProgressHUDDelegate>
 {
-    NSArray *arrayFromData;
+    MBProgressHUD *HUD;
+    
+    NSMutableArray *arrayFromData;
     NSDictionary *storyObjectDictionary;
+    UIImage *imageThumb;
+    URLCenter *urlCenter;
+    NSInteger pageNumber;
+    NSUInteger countAll;
+    NSUInteger numberToDisplay;
+    NSMutableData *receivedData;
+    NSMutableArray *myNewArray;
+    SoundManager *player;
+    
+    IOHostAudio *audioObject;
+    
 }
 
 @property (nonatomic, retain) NSDictionary *storyObjectDictionary;
-@property (nonatomic, retain) NSArray *arrayFromData;
+@property (nonatomic, retain) NSMutableArray *arrayFromData;
+@property (nonatomic, retain) UIImage *imageThumb;
+@property (nonatomic, retain) URLCenter *urlCenter;
+@property (nonatomic, assign) NSInteger pageNumber;
+@property (nonatomic, assign) NSUInteger countAll;
+@property (nonatomic, assign) NSUInteger numberToDisplay;
+@property (nonatomic, retain) NSMutableData *receivedData;
+@property (nonatomic, retain) NSMutableArray *myNewArray;
+@property (nonatomic, retain) SoundManager *player;
 
+@property (nonatomic, retain) IOHostAudio *audioObject;
+
+- (UIImage *)getImageThumb;
+- (void)saveImage: (UIImage *)image: (NSString *)storyID;
+- (UIImage *)loadImage: (NSString *)storyID;
+
++ (NSString *)hostURL;
+- (void)getArrayFromLoadMore;
 @end
